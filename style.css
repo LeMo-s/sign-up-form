@@ -1,4 +1,141 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+#img-section {
+    background-image: url("peter-robbins-dbzH7cC4MhY-unsplash.jpg");
+    background-size: cover;
+    height: 100%
+}
+
+.sections {
+    height: 100vh;
+}
+
+.first {
+    width: 40%;
+    position: relative;
+}
+
+.second {
+    width: 60%;
+}
+
+#author {
+    position: absolute;
+    bottom: 50px;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    width: 100%
+}
+
+#band {
+    position: absolute;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+#title {
+    color: white;
+    text-align: center;
+}
+
+#presentation, #connect {
+    position: relative;
+    background-color: #eeebeb;
+    height: 32.5%;
+    z-index: 1;
+}
+
+#form {
+    position: relative;
+    height: 35%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+#presentation, #form, #connect {
+    padding: 10px;
+}
+
+.form_row {
+    display: flex;
+}
+
+.form_cell {
+    flex: 1 1 45%;
+    margin-right: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+
+input:required {
+    border: 1px solid red;
+}
+
+input:required:valid {
+    border: 1px solid green;
+}
+
+input:focus {
+    border: 1px solid rgb(9, 0, 128);
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+button:hover, span:hover{
+    cursor: pointer;
+}
+
+span {
+    color: #596D48
+}
+
+legend {
+    margin-bottom: 10px;
 }
